@@ -20,6 +20,26 @@ export class OrdersComponent implements OnInit {
     private flexModal: FlexModalService,
     private http: Http
   ) {
+    [{
+      "pid": "1",
+      "image":"assets/sm_android.jpeg",
+      "description": "Android",
+      "price": 150.00,
+      "quantity": 2
+    }, {
+      "pid": "2",
+      "image":"assets/sm_iphone.jpeg",
+      "description": "IPhone",
+      "price": 200.00,
+      "quantity": 1
+    }, {
+      "pid": "3",
+      "image":"assets/sm_windows.jpeg",
+      "description": "Windows Phone",
+      "price": 110.00,
+      "quantity": 2
+    }]
+    
     }
 
   async ngOnInit() {
