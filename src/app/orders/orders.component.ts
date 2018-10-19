@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FlexModalService } from '../shared-components/flex-modal/flex-modal.service';
 import { Http } from '@angular/http';
+import { checkAndUpdatePureExpressionDynamic } from '@angular/core/src/view/pure_expression';
+import { _appIdRandomProviderFactory } from '@angular/core/src/application_tokens';
 
 @Component({
   selector: 'app-orders',
@@ -18,7 +20,7 @@ export class OrdersComponent implements OnInit {
     private flexModal: FlexModalService,
     private http: Http
   ) {
-  }
+    }
 
   async ngOnInit() {
 
