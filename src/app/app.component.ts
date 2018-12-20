@@ -14,8 +14,14 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.aboutText = 'This application was desgined by Miguel Mendoza (c) 2018.';
   }
 
   // Launch flex modal or alert (3pts reduced) showing about text
 
+  showModel() {
+    this.flexModal.openDialog('about-modal');
+  }
+
 }
+
